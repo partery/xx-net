@@ -4,7 +4,7 @@ MAINTAINER Sherylynn <352281674@qq.com>
 
 # install packages
 RUN apk --update add --no-cache libffi-dev py-cffi
-ENV XX_VERSION 3.3.6
+ENV XX_VERSION 3.3.4
 ENV DOWNLOAD_URL https://codeload.github.com/XX-net/XX-Net/tar.gz/${XX_VERSION}
 RUN wget -q --no-check-certificate ${DOWNLOAD_URL} && \
     tar -xzf ${XX_VERSION} && \
